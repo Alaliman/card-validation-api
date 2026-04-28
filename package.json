@@ -1,7 +1,7 @@
 {
   "name": "card-validation-api",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/main.ts",
     "build": "tsc",

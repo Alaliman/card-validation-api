@@ -20,7 +20,7 @@ A REST API that validates card numbers using the Luhn algorithm, built with Node
 
 ## Live Demo
 
-- **API:** https://card-validation-api-j5eq.onrender.com
+- **API:** https://card-validation-api-j5eq.onrender.com/api/validate-card
 - **Frontend:** https://alaliman.github.io/card-validation-frontend
 
 ---

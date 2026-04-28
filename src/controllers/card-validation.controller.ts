@@ -2,10 +2,7 @@ import { Request, Response } from 'express';
 import { luhnService } from '../services/card-validation.service';
 
 export const validateCard = (req: Request, res: Response): void => {
-    console.log(req.body);
   const { cardNumber } = req.body;
-
-  console.log(`Received card number for validation: ${cardNumber}`);
   
   const isValid = luhnService.validateCardNumber(cardNumber);
   

@@ -3,7 +3,6 @@ import { Request, Response, NextFunction } from 'express';
 export const validateCardInput = (req: Request, res: Response, next: NextFunction): void => {
   const { cardNumber } = req.body;
 
-
   if (cardNumber === undefined || cardNumber === null) {
     res.status(400).json({ error: 'MISSING_FIELD', message: 'cardNumber is required' });
     return;
@@ -25,8 +24,6 @@ export const validateCardInput = (req: Request, res: Response, next: NextFunctio
     res.status(400).json({ error: 'INVALID_FORMAT', message: 'cardNumber must contain digits only' });
     return;
   }
-
-  console.log('Cleaned card number:', cleanedValue);
 
   if (cleanedValue.length < 13 || cleanedValue.length > 19) {
     res.status(400).json({ error: 'INVALID_LENGTH', message: 'cardNumber must be between 13 and 19 digits' });

@@ -13,8 +13,4 @@ app.use(express.json());
 // Routes
 app.use('/api', cardRoutes);
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the Card Validation API' });
-});
-
 export default app;

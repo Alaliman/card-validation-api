@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 
 export const validateCardInput = (req: Request, res: Response, next: NextFunction): void => {
   if (!req.body || Object.keys(req.body).length === 0) {
-    res.status(400).json({ error: 'EMPTY_BODY', message: 'card number is required' });
+    res.status(400).json({ error: 'EMPTY_BODY', message: 'Request body is empty' });
     return;
   }
 

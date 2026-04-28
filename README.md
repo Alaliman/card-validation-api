@@ -199,6 +199,9 @@ This API can be deployed using platforms like render. This is optional
 
 Environment variables such as `PORT` are automatically managed by the platform.
 
+### Live URL
+https://card-validation-api-j5eq.onrender.com
+
 ---
 
 ## Design Decisions

@@ -6,14 +6,22 @@ A REST API that validates card numbers using the Luhn algorithm, built with Node
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
-2. [Project Structure](#project-structure)
-3. [The Endpoint](#the-endpoint)
-4. [Environment Variables](#environment-variables)
-5. [Deployment](#deployment)
-6. [Design Decisions](#design-decisions)
-7. [Testing Approach](#testing-approach)
-8. [Author](#author)
+1. [Live Demo](#live-demo)
+2. [Getting Started](#getting-started)
+3. [Project Structure](#project-structure)
+4. [The Endpoint](#the-endpoint)
+5. [Environment Variables](#environment-variables)
+6. [Deployment](#deployment)
+7. [Design Decisions](#design-decisions)
+8. [Testing Approach](#testing-approach)
+9. [Author](#author)
+
+---
+
+## Live Demo
+
+- **API:** https://card-validation-api-j5eq.onrender.com
+- **Frontend:** https://alaliman.github.io/card-validation-frontend
 
 ---
 
@@ -198,9 +206,6 @@ This API can be deployed using platforms like render. This is optional
 - Start Command: `npm start`
 
 Environment variables such as `PORT` are automatically managed by the platform.
-
-### Live URL
-https://card-validation-api-j5eq.onrender.com
 
 ---
 

@@ -1,5 +1,7 @@
 export class LuhnService {
   public validateCardNumber(cardNumber: string): boolean {
+
+    // Luhn algorithm implementation
     const digits = cardNumber.split('').map(Number);
     let sum = 0;
     let isSecond = false;

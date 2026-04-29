@@ -1,6 +1,8 @@
 import { describe, it, expect } from '@jest/globals';
 import { luhnService} from '../services/card-validation.service';
 
+
+// Unit tests for the LuhnService class
 describe('LuhnService', () => {
   it('Valid Visa number 4532015112830366 → returns true', () => {
     expect(luhnService.validateCardNumber('4532015112830366')).toBe(true);

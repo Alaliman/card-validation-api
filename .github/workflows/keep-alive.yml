@@ -1,0 +1,15 @@
+name: Keep API Alive
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # runs every 5 minutes
+  workflow_dispatch:          # allows you to trigger it manually from GitHub
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping health endpoint
+        run: |
+          curl -f https://card-validation-api-j5eq.onrender.com/health || echo "Ping failed"

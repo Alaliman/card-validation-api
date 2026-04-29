@@ -13,11 +13,11 @@ app.use(express.json());
 // Routes
 app.use('/api', cardRoutes);
 
+// Health check endpoint
 app.get('/health', (req: Request, res: Response) => {
   res.status(200).json({
     status: 'ok',
     message: 'Server is awake and running',
-    note: 'This API is hosted on a free tier. If your first request was slow, the server was waking up. Subsequent requests will be fast.'
   });
 });
 

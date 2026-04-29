@@ -23,6 +23,11 @@ A REST API that validates card numbers using the Luhn algorithm, built with Node
 - **API:** https://card-validation-api-j5eq.onrender.com/api/validate-card
 - **Frontend:** https://alaliman.github.io/card-validation-frontend
 
+### Health Check Endpoint
+A `/health` endpoint is included to provide a lightweight way to check 
+if the server is running without triggering any validation logic.
+GET https://card-validation-api-j5eq.onrender.com/health
+
 ---
 
 ## Getting Started
